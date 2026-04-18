@@ -76,7 +76,7 @@ export default function App() {
   const user = { name: 'Trader', email: 'trader@example.com' }
 
   return (
-    <div className="min-h-screen bg-bg text-white font-sans">
+    <div className="min-h-screen font-sans" style={{ background: '#080c12', color: '#f0f6fc' }}>
       <Sidebar current={page} onNavigate={setPage} user={user} />
       <Header
         page={page}
@@ -88,7 +88,7 @@ export default function App() {
       />
 
       <main className="ml-60 pt-14 min-h-screen">
-        <div className="p-6">
+        <div className="p-6 max-w-[1400px]">
           {page === 'dashboard' && (
             <DashboardPage trades={store.trades} onAddTrade={() => setPage('trades')} />
           )}
