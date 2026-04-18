@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X, Plus, ChevronDown, ChevronRight, Info, Trash2, BookOpen } from 'lucide-react'
+import { X, Plus, ChevronDown, Trash2, BookOpen } from 'lucide-react'
 import { AssetType, OptionType, Side, Emotion, Trade, TradeLeg, Template } from '../types'
 
 const EMOTIONS: Emotion[] = [
@@ -59,7 +59,7 @@ export default function AddTradeModal({ onClose, onSave, templates, onSaveTempla
   const [playbook, setPlaybook] = useState(t?.playbook || '')
   const [plannedRisk, setPlannedRisk] = useState(t?.plannedRisk?.toString() || '')
   const [mae, setMae] = useState(t?.mae?.toString() || '')
-  const [mfe, setMfe] = useState(t?.mfe?.toString() || '')
+  const [mfe, _setMfe] = useState(t?.mfe?.toString() || '')
   const [emotion, setEmotion] = useState<Emotion | undefined>(t?.emotion)
   const [notes, setNotes] = useState(t?.notes || '')
   const [templateName, setTemplateName] = useState('')

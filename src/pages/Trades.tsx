@@ -41,7 +41,7 @@ export default function TradesPage({ trades, onAddTrade, onEditTrade, onDeleteTr
   const [assetTypeFilter, setAssetTypeFilter] = useState<AssetType | 'All'>('All')
   const [sideFilter, setSideFilter] = useState<Side | 'All'>('All')
   const [resultFilter, setResultFilter] = useState<TradeResult | 'All'>('All')
-  const [strategyFilter, setStrategyFilter] = useState('')
+  const [strategyFilter, _setStrategyFilter] = useState('')
   const [emotionFilter, setEmotionFilter] = useState<Emotion | 'All'>('All')
   const [fromDate, setFromDate] = useState('')
   const [toDate, setToDate] = useState('')

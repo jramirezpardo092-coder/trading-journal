@@ -47,7 +47,6 @@ export default function CalendarPage({ trades }: Props) {
   function prevMonth() { if (month === 0) { setMonth(11); setYear(year - 1) } else setMonth(month - 1) }
   function nextMonth() { if (month === 11) { setMonth(0); setYear(year + 1) } else setMonth(month + 1) }
 
-  const CARD = { background: 'rgba(15,22,33,0.9)', border: '1px solid rgba(37,46,62,0.8)' }
   const todayStr = today.toISOString().split('T')[0]
 
   function renderMonth() {

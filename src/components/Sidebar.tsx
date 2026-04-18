@@ -1,6 +1,6 @@
 import {
   LayoutDashboard, Calendar, BarChart2, TrendingUp, PieChart,
-  Play, ClipboardList, BookOpen, Wallet, LogOut, ChevronRight
+  Play, ClipboardList, BookOpen, Wallet, LogOut
 } from 'lucide-react'
 
 type Page =
